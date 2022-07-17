@@ -25,10 +25,14 @@ void PrintElementOnPosition(double[,] matrix, int indexI, int indexJ)
     if (indexI < 0 || indexI >= nRows
         || indexJ < 0 || indexJ >= nRows)
     {
+        TextColorRed();
         Console.WriteLine("Row and/or column is out of range");
     }
     else
+    {
+        TextColorGreen();
         Console.WriteLine($"There is number {Math.Round(matrix[indexI, indexJ], 2)} on position [{indexI}, {indexJ}]");
+    }
 }
 
 //....................Basic methods......................//
