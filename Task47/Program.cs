@@ -5,13 +5,13 @@ TextColorGreen();
 //.............................
 double minNumber = 1;
 double maxNumber = 9;
-double[,] matrix = GetMatrix();
+double[,] matrix = GetMatrix(minNumber, maxNumber);
 PrintMatrix(matrix);
 //.............................
 Console.ResetColor();
 
 
-double[,] GetMatrix()
+double[,] GetMatrix(double minNumber, double maxNumber)
 {
     Console.Write("Enter number of ROWS for the array: ");
     int nRows = EnterPositiveInteger();
